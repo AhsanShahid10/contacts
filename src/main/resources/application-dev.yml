@@ -1,0 +1,7 @@
+# application-dev.yml
+
+logging:
+  path: ./logs
+
+
+

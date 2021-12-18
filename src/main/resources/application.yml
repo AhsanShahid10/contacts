@@ -1,0 +1,41 @@
+server:
+  servlet:
+    session:
+      timeout: 30m
+    cookie:
+      max-age: 30m
+  port: 80
+
+spring:
+  jpa:
+    generate-ddl: true
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      maxFileSize: 10MB
+      maxRequestSize: 10MB
+  jackson:
+    time-zone: America/New_York
+  batch:
+    job:
+      enabled: false
+  application:
+    name: unation-pay
+  datasource:
+    driver-class-name: org.h2.Driver
+    url:jdbc: h2:mem:myDb;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa
+    initialization-mode: never
+    hikari:
+      maximum-pool-size: 10
+      auto-commit: false
+      connection-timeout: 30000
+      minimum-idle: 10
+      type: com.zaxxer.hikari.HikariDataSource
+
+
+hibernate:
+  hbm2ddl:
+    auto: create

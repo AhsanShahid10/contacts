@@ -1,0 +1,4 @@
+# application-stg.yml
+
+logging:
+  path: ./logs

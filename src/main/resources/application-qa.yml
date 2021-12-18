@@ -1,0 +1,4 @@
+# application-qa.yml
+
+logging:
+  path: ./logs

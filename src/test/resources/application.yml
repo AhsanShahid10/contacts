@@ -1,0 +1,10 @@
+esb:
+  anonymous:
+    messages:
+      - esbCode: SUBSCRIBER_NOT_FOUND
+        sp: Jazz_Prepaid.sp
+        errorCategory: JAZZ_PREPAID_NOT_FOUND
+      - esbCode: SUBSCRIBER_NOT_FOUND
+        sp: Jazz_Postpaid.sp
+        errorCategory: JAZZ_POSTPAID_NOT_FOUND
+
